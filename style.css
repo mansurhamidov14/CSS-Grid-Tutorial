@@ -5,6 +5,17 @@ body {
 
 .grid-1 {
   display: grid;
+
+  /* First method */
+  grid-template-rows: 40px 180px 100px 100px;
+  grid-template-columns: 1fr 3fr 3fr 2fr 2fr 1fr;
+  grid-template-areas: 
+    "header header header header header header"  
+    ". left-sidebar content content right-sidebar ."
+    ". left-sidebar left-section right-top-section right-top-section ."
+    ". left-sidebar left-section right-bottom-section right-bottom-section .";
+
+  /* Alternate method */
   grid-template:
     "header header header header header header" 40px
     ". left-sidebar content content right-sidebar ." 180px
