@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template:
+    "header header header header header header" 40px
+    ". left-sidebar content content right-sidebar ." 180px
+    ". left-sidebar left-section right-top-section right-top-section ." 100px
+    ". left-sidebar left-section right-bottom-section right-bottom-section ." 100px
+    / 1fr 3fr 3fr 2fr 2fr 1fr;
+}
+
+.grid-1 .header {
+  background-color: red;
+  grid-area: header;
+}
+
+.grid-1 .left-sidebar {
+  background-color: green;
+  grid-area: left-sidebar;
+}
+
+.grid-1 .content {
+  background-color: yellow;
+  grid-area: content;
+}
+
+.grid-1 .right-top-section {
+  background-color: blue;
+  grid-area: right-top-section;
+}
+
+.grid-1 .right-bottom-section {
+  background-color: orange;
+  grid-area: right-bottom-section;
+}
+
+.grid-1 .right-sidebar {
+  background-color: teal;
+  grid-area: right-sidebar;
+}
+
+.grid-1 .left-section {
+  background-color: blueviolet;
+  grid-area: left-section;
+}
