@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  display: grid;
+  grid-row-gap: 8px;
+  grid-column-gap: 9px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+  aspect-ratio: 5 / 6;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-color: chocolate;
+}
+
+.portfolio-item.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-item.medium {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-item.large {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.portfolio-item.tall {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.portfolio-item.wide {
+  grid-column: span 3;
+  grid-row: span 2;
+}
